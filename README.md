@@ -1,2 +1,2 @@
-# Visual-Studio-2019-Tricks-and-Techniques
-Visual Studio 2019 Tips and Techniques, published by Packt
+# VisualStudioTipsAndTricks
+Packt Visual Studio Tips and Tricks book.

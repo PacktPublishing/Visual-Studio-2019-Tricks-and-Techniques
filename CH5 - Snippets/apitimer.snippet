@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>API Method Timer</Title>
+			<Shortcut>apitimer</Shortcut>
+			<Description>Leverages System.Diagnostics.Stopwatch to log how long it took to execute a method.</Description>
+			<Author>Paul Schroeder</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+				<SnippetType>SurroundsWith</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+      <Declarations>
+        <Literal>
+          <ID>sw</ID>
+          <Default>stopwatch</Default>
+          <ToolTip>Variable name for the stopwatch object.</ToolTip>
+        </Literal>
+		<Literal default="true" Editable="false">
+			<ID>classname</ID>
+			<ToolTip>Class name</ToolTip>
+			<Function>ClassName()</Function>
+			<Default>ClassNamePlaceholder</Default>
+        </Literal>		
+      </Declarations>
+			<Code Language="csharp">
+		<![CDATA[var $sw$ = Stopwatch.StartNew();
+            $selected$
+            $end$
+            $sw$.Stop();
+            Log.LogInformation($$"Executed {nameof($classname$)}.{MethodBase.GetCurrentMethod().Name} in {($sw$.Elapsed.TotalMilliseconds)} Milliseconds");
+	]]>
+			</Code>
+			<Imports>
+				<Import>
+					<Namespace>System.Diagnostics</Namespace>
+				</Import>
+				<Import>
+					<Namespace>System.Reflection</Namespace>
+				</Import>
+				<Import>
+					<Namespace>Microsoft.Extensions.Logging</Namespace>
+				</Import>				
+			</Imports>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
