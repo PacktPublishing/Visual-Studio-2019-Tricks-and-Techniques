@@ -1,0 +1,36 @@
+﻿<Window x:Class="$safeprojectname$.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:$safeprojectname$"
+        xmlns:viewModel="clr-namespace:$safeprojectname$.ViewModel"
+        mc:Ignorable="d"
+        Title="{Binding WindowTitle}" Height="300" Width="600">
+    <StackPanel Orientation="Vertical" FocusManager.FocusedElement="{Binding ElementName=SelectCountry}">
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <Label Content="Select Country: " Margin="0 0 10 0" Width="110" />
+            <ComboBox Width="130" Name="SelectCountry" ItemsSource="{Binding CountryList}" DisplayMemberPath="Name" SelectedValue="{Binding SelectedCountryId}" SelectedValuePath="CountryId" Margin="0 0 10 0"
+                    IsDropDownOpen="{Binding Path=IsSelectCountryOpen, Mode=OneWay}" />
+            <Label Content="{Binding SelectedCountryId}" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <Label Content="State: " Margin="0 0 10 0" Width="110" />
+            <ComboBox Width="130" ItemsSource="{Binding StateList}" DisplayMemberPath="Name" SelectedValue="{Binding SelectedStateId}" SelectedValuePath="StateId" IsEnabled="{Binding AllowStateSelection}" Margin="0 0 10 0"
+                      IsDropDownOpen="{Binding Path=IsSelectStateOpen, Mode=OneWay}" />
+            <Label Content="{Binding SelectedStateId}" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <Label Content="City: " Margin="0 0 10 0" Width="110" />
+            <ComboBox Width="130" ItemsSource="{Binding CityList}" DisplayMemberPath="Name" SelectedValue="{Binding SelectedCityId}" SelectedValuePath="CityId" IsEnabled="{Binding AllowCitySelection}" Margin="0 0 10 0"
+                      IsDropDownOpen="{Binding Path=IsSelectCityOpen, Mode=OneWay}" />
+            <Label Content="{Binding SelectedCityId}" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <Button Content="OK" Command="{Binding OkCommand}" Margin="225 0 10 0" />
+        </StackPanel>
+    </StackPanel>
+</Window>

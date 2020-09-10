@@ -1,0 +1,66 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>CitySelector.WPF</Name>
+    <Description>WPF Client for CitySelector Web API</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>CitySelector.WPF</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="CitySelector.WPF.csproj" File="CitySelector.WPF.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml.cs">App.xaml.cs</ProjectItem>
+      <Folder Name="Comparers" TargetFolderName="Comparers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CityComparer.cs">CityComparer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CountryComparer.cs">CountryComparer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StateComparer.cs">StateComparer.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Data" TargetFolderName="Data">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CitySelectorDataItem.cs">CitySelectorDataItem.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SampleData.cs">SampleData.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SampleData.json">SampleData.json</ProjectItem>
+      </Folder>
+      <Folder Name="Infrastructure" TargetFolderName="Infrastructure">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AsyncHelper.cs">AsyncHelper.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RelayCommand.cs">RelayCommand.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Model" TargetFolderName="Model">
+        <ProjectItem ReplaceParameters="true" TargetFileName="City.cs">City.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Country.cs">Country.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="State.cs">State.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.resx">Resources.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.Designer.cs">Resources.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Service" TargetFolderName="Service">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CitySelectorApiService.cs">CitySelectorApiService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CitySelectorJsonService.cs">CitySelectorJsonService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CitySelectorMockService.cs">CitySelectorMockService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CitySelectorServiceBase.cs">CitySelectorServiceBase.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ICitySelectorService.cs">ICitySelectorService.cs</ProjectItem>
+      </Folder>
+      <Folder Name="View" TargetFolderName="View">
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainWindow.xaml">MainWindow.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainWindow.xaml.cs">MainWindow.xaml.cs</ProjectItem>
+      </Folder>
+      <Folder Name="ViewModel" TargetFolderName="ViewModel">
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainWindowViewModel.cs">MainWindowViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ViewModelBase.cs">ViewModelBase.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

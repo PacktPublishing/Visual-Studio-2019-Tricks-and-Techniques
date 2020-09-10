@@ -1,0 +1,36 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Client Server WPF / Web API Application Template</Name>
+    <Description>WPF client application communicating with a Web API</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>WPFClientServer</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+    <LanguageTag>C#</LanguageTag>
+    <PlatformTag>windows</PlatformTag>
+    <ProjectTypeTag>console</ProjectTypeTag>
+    <ProjectTypeTag>desktop</ProjectTypeTag>
+    <ProjectTypeTag>TipTrick</ProjectTypeTag>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <SolutionFolder Name="Server">
+            <ProjectTemplateLink ProjectName="$safeprojectname$.WebAPI">
+                CitySelector.API\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+        </SolutionFolder>
+        <SolutionFolder Name="Client">
+            <ProjectTemplateLink ProjectName="$projectname$.WPF">
+                CitySelector.WPF\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+        </SolutionFolder>
+      </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>

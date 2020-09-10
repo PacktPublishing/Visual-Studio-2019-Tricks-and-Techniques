@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitySelector.API", "CitySelector.API\CitySelector.API.csproj", "{1F094AAA-F96F-44AD-B220-0C8363A96F0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitySelector.WPF", "CitySelector.WPF\CitySelector.WPF.csproj", "{BEB5735B-AAE9-4465-9F34-0BB4F0249D12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F094AAA-F96F-44AD-B220-0C8363A96F0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F094AAA-F96F-44AD-B220-0C8363A96F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F094AAA-F96F-44AD-B220-0C8363A96F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F094AAA-F96F-44AD-B220-0C8363A96F0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEB5735B-AAE9-4465-9F34-0BB4F0249D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB5735B-AAE9-4465-9F34-0BB4F0249D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB5735B-AAE9-4465-9F34-0BB4F0249D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB5735B-AAE9-4465-9F34-0BB4F0249D12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9B6D147-C74E-43A7-A54F-65FA7699196F}
+	EndGlobalSection
+EndGlobal

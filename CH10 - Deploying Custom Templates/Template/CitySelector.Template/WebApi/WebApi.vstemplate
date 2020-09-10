@@ -1,0 +1,307 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>CitySelector.API</Name>
+    <Description>A mock server-side API for use with the CitySelector client template</Description>
+    <ProjectType>CSharp</ProjectType>
+    <LanguageTag>C#</LanguageTag>
+    <PlatformTag>windows</PlatformTag>
+    <ProjectTypeTag>web</ProjectTypeTag>
+    <ProjectTypeTag>cloud</ProjectTypeTag>
+    <ProjectTypeTag>TipTrick</ProjectTypeTag>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>CitySelector.API</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="CitySelector.API.csproj" File="CitySelector.API.csproj" ReplaceParameters="true">
+      <Folder Name="App_Data" TargetFolderName="App_Data" />
+      <Folder Name="App_Start" TargetFolderName="App_Start">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BundleConfig.cs">BundleConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FilterConfig.cs">FilterConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RouteConfig.cs">RouteConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WebApiConfig.cs">WebApiConfig.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Areas" TargetFolderName="Areas">
+        <Folder Name="HelpPage" TargetFolderName="HelpPage">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ApiDescriptionExtensions.cs">ApiDescriptionExtensions.cs</ProjectItem>
+          <Folder Name="App_Start" TargetFolderName="App_Start">
+            <ProjectItem ReplaceParameters="true" TargetFileName="HelpPageConfig.cs">HelpPageConfig.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Controllers" TargetFolderName="Controllers">
+            <ProjectItem ReplaceParameters="true" TargetFileName="HelpController.cs">HelpController.cs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="HelpPage.css">HelpPage.css</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="HelpPageAreaRegistration.cs">HelpPageAreaRegistration.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="HelpPageConfigurationExtensions.cs">HelpPageConfigurationExtensions.cs</ProjectItem>
+          <Folder Name="ModelDescriptions" TargetFolderName="ModelDescriptions">
+            <ProjectItem ReplaceParameters="true" TargetFileName="CollectionModelDescription.cs">CollectionModelDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ComplexTypeModelDescription.cs">ComplexTypeModelDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="DictionaryModelDescription.cs">DictionaryModelDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="EnumTypeModelDescription.cs">EnumTypeModelDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="EnumValueDescription.cs">EnumValueDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="IModelDocumentationProvider.cs">IModelDocumentationProvider.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="KeyValuePairModelDescription.cs">KeyValuePairModelDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ModelDescription.cs">ModelDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ModelDescriptionGenerator.cs">ModelDescriptionGenerator.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ModelNameAttribute.cs">ModelNameAttribute.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ModelNameHelper.cs">ModelNameHelper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ParameterAnnotation.cs">ParameterAnnotation.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ParameterDescription.cs">ParameterDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="SimpleTypeModelDescription.cs">SimpleTypeModelDescription.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Models" TargetFolderName="Models">
+            <ProjectItem ReplaceParameters="true" TargetFileName="HelpPageApiModel.cs">HelpPageApiModel.cs</ProjectItem>
+          </Folder>
+          <Folder Name="SampleGeneration" TargetFolderName="SampleGeneration">
+            <ProjectItem ReplaceParameters="true" TargetFileName="HelpPageSampleGenerator.cs">HelpPageSampleGenerator.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="HelpPageSampleKey.cs">HelpPageSampleKey.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ImageSample.cs">ImageSample.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="InvalidSample.cs">InvalidSample.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ObjectGenerator.cs">ObjectGenerator.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="SampleDirection.cs">SampleDirection.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="TextSample.cs">TextSample.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Views" TargetFolderName="Views">
+            <ProjectItem ReplaceParameters="true" TargetFileName="_ViewStart.cshtml">_ViewStart.cshtml</ProjectItem>
+            <Folder Name="Help" TargetFolderName="Help">
+              <ProjectItem ReplaceParameters="true" TargetFileName="Api.cshtml">Api.cshtml</ProjectItem>
+              <Folder Name="DisplayTemplates" TargetFolderName="DisplayTemplates">
+                <ProjectItem ReplaceParameters="true" TargetFileName="ApiGroup.cshtml">ApiGroup.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="CollectionModelDescription.cshtml">CollectionModelDescription.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="ComplexTypeModelDescription.cshtml">ComplexTypeModelDescription.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="DictionaryModelDescription.cshtml">DictionaryModelDescription.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="EnumTypeModelDescription.cshtml">EnumTypeModelDescription.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="HelpPageApiModel.cshtml">HelpPageApiModel.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="ImageSample.cshtml">ImageSample.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="InvalidSample.cshtml">InvalidSample.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="KeyValuePairModelDescription.cshtml">KeyValuePairModelDescription.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="ModelDescriptionLink.cshtml">ModelDescriptionLink.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="Parameters.cshtml">Parameters.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="Samples.cshtml">Samples.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="SimpleTypeModelDescription.cshtml">SimpleTypeModelDescription.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="TextSample.cshtml">TextSample.cshtml</ProjectItem>
+              </Folder>
+              <ProjectItem ReplaceParameters="true" TargetFileName="Index.cshtml">Index.cshtml</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ResourceModel.cshtml">ResourceModel.cshtml</ProjectItem>
+            </Folder>
+            <Folder Name="Shared" TargetFolderName="Shared">
+              <ProjectItem ReplaceParameters="true" TargetFileName="_Layout.cshtml">_Layout.cshtml</ProjectItem>
+            </Folder>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="XmlDocumentationProvider.cs">XmlDocumentationProvider.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Comparers" TargetFolderName="Comparers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CityComparer.cs">CityComparer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CountryComparer.cs">CountryComparer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StateComparer.cs">StateComparer.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Content" TargetFolderName="Content">
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-grid.css">bootstrap-grid.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-grid.css.map">bootstrap-grid.css.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-grid.min.css">bootstrap-grid.min.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-grid.min.css.map">bootstrap-grid.min.css.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-reboot.css">bootstrap-reboot.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-reboot.css.map">bootstrap-reboot.css.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-reboot.min.css">bootstrap-reboot.min.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-reboot.min.css.map">bootstrap-reboot.min.css.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.css">bootstrap.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.css.map">bootstrap.css.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.css">bootstrap.min.css</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.css.map">bootstrap.min.css.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Site.css">Site.css</ProjectItem>
+      </Folder>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CountryStateCityController.cs">CountryStateCityController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HomeController.cs">HomeController.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax">Global.asax</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax.cs">Global.asax.cs</ProjectItem>
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="City.cs">City.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CitySelectorDataItem.cs">CitySelectorDataItem.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Country.cs">Country.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="State.cs">State.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Scripts" TargetFolderName="Scripts">
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.bundle.js">bootstrap.bundle.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.bundle.js.map">bootstrap.bundle.js.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.bundle.min.js">bootstrap.bundle.min.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.bundle.min.js.map">bootstrap.bundle.min.js.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.js">bootstrap.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.js.map">bootstrap.js.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.js">bootstrap.min.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.js.map">bootstrap.min.js.map</ProjectItem>
+        <Folder Name="esm" TargetFolderName="esm">
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.js">popper-utils.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.js.map">popper-utils.js.map</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.min.js">popper-utils.min.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.min.js.map">popper-utils.min.js.map</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.js">popper.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.js.map">popper.js.map</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.min.js">popper.min.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.min.js.map">popper.min.js.map</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="index.d.ts">index.d.ts</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="index.js.flow">index.js.flow</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.5.1.intellisense.js">jquery-3.5.1.intellisense.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.5.1.js">jquery-3.5.1.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.5.1.min.js">jquery-3.5.1.min.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.5.1.min.map">jquery-3.5.1.min.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.5.1.slim.js">jquery-3.5.1.slim.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.5.1.slim.min.js">jquery-3.5.1.slim.min.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="jquery-3.5.1.slim.min.map">jquery-3.5.1.slim.min.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="modernizr-2.8.3.js">modernizr-2.8.3.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.js">popper-utils.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.js.map">popper-utils.js.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.min.js">popper-utils.min.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.min.js.map">popper-utils.min.js.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper.js">popper.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper.js.map">popper.js.map</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper.min.js">popper.min.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="popper.min.js.map">popper.min.js.map</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+        <Folder Name="src" TargetFolderName="src">
+          <ProjectItem ReplaceParameters="true" TargetFileName="index.js">index.js</ProjectItem>
+          <Folder Name="methods" TargetFolderName="methods">
+            <ProjectItem ReplaceParameters="true" TargetFileName="defaults.js">defaults.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="destroy.js">destroy.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="disableEventListeners.js">disableEventListeners.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="enableEventListeners.js">enableEventListeners.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="placements.js">placements.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="update.js">update.js</ProjectItem>
+          </Folder>
+          <Folder Name="modifiers" TargetFolderName="modifiers">
+            <ProjectItem ReplaceParameters="true" TargetFileName="applyStyle.js">applyStyle.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="arrow.js">arrow.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="computeStyle.js">computeStyle.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="flip.js">flip.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="hide.js">hide.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="index.js">index.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="inner.js">inner.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="keepTogether.js">keepTogether.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="offset.js">offset.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="preventOverflow.js">preventOverflow.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="shift.js">shift.js</ProjectItem>
+          </Folder>
+          <Folder Name="utils" TargetFolderName="utils">
+            <ProjectItem ReplaceParameters="true" TargetFileName="clockwise.js">clockwise.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="computeAutoPlacement.js">computeAutoPlacement.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="debounce.js">debounce.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="find.js">find.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="findCommonOffsetParent.js">findCommonOffsetParent.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="findIndex.js">findIndex.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getBordersSize.js">getBordersSize.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getBoundaries.js">getBoundaries.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getBoundingClientRect.js">getBoundingClientRect.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getClientRect.js">getClientRect.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getFixedPositionOffsetParent.js">getFixedPositionOffsetParent.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getOffsetParent.js">getOffsetParent.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getOffsetRect.js">getOffsetRect.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getOffsetRectRelativeToArbitraryNode.js">getOffsetRectRelativeToArbitraryNode.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getOppositePlacement.js">getOppositePlacement.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getOppositeVariation.js">getOppositeVariation.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getOuterSizes.js">getOuterSizes.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getParentNode.js">getParentNode.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getPopperOffsets.js">getPopperOffsets.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getReferenceNode.js">getReferenceNode.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getReferenceOffsets.js">getReferenceOffsets.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getRoot.js">getRoot.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getRoundedOffsets.js">getRoundedOffsets.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getScroll.js">getScroll.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getScrollParent.js">getScrollParent.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getStyleComputedProperty.js">getStyleComputedProperty.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getSupportedPropertyName.js">getSupportedPropertyName.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getViewportOffsetRectRelativeToArtbitraryNode.js">getViewportOffsetRectRelativeToArtbitraryNode.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getWindow.js">getWindow.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="getWindowSizes.js">getWindowSizes.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="includeScroll.js">includeScroll.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="index.js">index.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="isBrowser.js">isBrowser.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="isFixed.js">isFixed.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="isFunction.js">isFunction.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="isIE.js">isIE.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="isModifierEnabled.js">isModifierEnabled.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="isModifierRequired.js">isModifierRequired.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="isNumeric.js">isNumeric.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="isOffsetContainer.js">isOffsetContainer.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="removeEventListeners.js">removeEventListeners.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="runModifiers.js">runModifiers.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="setAttributes.js">setAttributes.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="setStyles.js">setStyles.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="setupEventListeners.js">setupEventListeners.js</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="umd" TargetFolderName="umd">
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.js">popper-utils.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.js.map">popper-utils.js.map</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.min.js">popper-utils.min.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper-utils.min.js.map">popper-utils.min.js.map</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.js">popper.js</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="popper.js.flow">popper.js.flow</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.js.map">popper.js.map</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.min.js">popper.min.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="popper.min.js.map">popper.min.js.map</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Views" TargetFolderName="Views">
+        <ProjectItem ReplaceParameters="true" TargetFileName="_ViewStart.cshtml">_ViewStart.cshtml</ProjectItem>
+        <Folder Name="Home" TargetFolderName="Home">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Index.cshtml">Index.cshtml</ProjectItem>
+        </Folder>
+        <Folder Name="Shared" TargetFolderName="Shared">
+          <ProjectItem ReplaceParameters="true" TargetFileName="_Layout.cshtml">_Layout.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Error.cshtml">Error.cshtml</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Debug.config">Web.Debug.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Release.config">Web.Release.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardExtension>
+    <Assembly>CitySelector.Wizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=8e9559722a7805aa</Assembly>
+    <FullClassName>CitySelector.Wizard.WebApiWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages repository="extension"
+              repositoryId="CitySelector.Deploy.167d456e-481c-4186-aef9-ef3b736a9620">
+      <package id="Antlr" version="3.5.0.2" targetFramework="net472" />
+      <package id="bootstrap" version="4.5.2" targetFramework="net472" />
+      <package id="jQuery" version="3.5.1" targetFramework="net472" />
+      <package id="Microsoft.AspNet.Mvc" version="5.2.7" targetFramework="net472" />
+      <package id="Microsoft.AspNet.Razor" version="3.2.7" targetFramework="net472" />
+      <package id="Microsoft.AspNet.Web.Optimization" version="1.1.3" targetFramework="net472" />
+      <package id="Microsoft.AspNet.WebApi" version="5.2.7" targetFramework="net472" />
+      <package id="Microsoft.AspNet.WebApi.Client" version="5.2.7" targetFramework="net472" />
+      <package id="Microsoft.AspNet.WebApi.Core" version="5.2.7" targetFramework="net472" />
+      <package id="Microsoft.AspNet.WebApi.HelpPage" version="5.2.7" targetFramework="net472" />
+      <package id="Microsoft.AspNet.WebApi.WebHost" version="5.2.7" targetFramework="net472" />
+      <package id="Microsoft.AspNet.WebPages" version="3.2.7" targetFramework="net472" />
+      <package id="Microsoft.CodeDom.Providers.DotNetCompilerPlatform" version="3.6.0" targetFramework="net472" />
+      <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" targetFramework="net472" />
+      <package id="Modernizr" version="2.8.3" targetFramework="net472" />
+      <package id="Newtonsoft.Json" version="12.0.3" targetFramework="net472" />
+      <package id="popper.js" version="1.16.1" targetFramework="net472" />
+      <package id="WebGrease" version="1.6.0" targetFramework="net472" />
+    </packages>
+  </WizardData>
+</VSTemplate>
