@@ -3,17 +3,16 @@ using System.ComponentModel.Design;
 using System.Globalization;
 using System.Threading;
 using System.Threading.Tasks;
-using EnvDTE;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using Task = System.Threading.Tasks.Task;
 
-namespace DateInserter
+namespace HeaderInserter
 {
     /// <summary>
     /// Command handler
     /// </summary>
-    internal sealed class DateCommand
+    internal sealed class HeaderCommand
     {
         /// <summary>
         /// Command ID.
@@ -23,7 +22,7 @@ namespace DateInserter
         /// <summary>
         /// Command menu group (command set GUID).
         /// </summary>
-        public static readonly Guid CommandSet = new Guid("3c8f39a8-582c-4fd8-a3c1-e10195056933");
+        public static readonly Guid CommandSet = new Guid("936564a7-abb7-4e52-b0d4-a3aaec295d02");
 
         /// <summary>
         /// VS Package that provides this command, not null.
@@ -31,12 +30,12 @@ namespace DateInserter
         private readonly AsyncPackage package;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DateCommand"/> class.
+        /// Initializes a new instance of the <see cref="HeaderCommand"/> class.
         /// Adds our command handlers for menu (commands must exist in the command table file)
         /// </summary>
         /// <param name="package">Owner package, not null.</param>
         /// <param name="commandService">Command service to add command to, not null.</param>
-        private DateCommand(AsyncPackage package, OleMenuCommandService commandService)
+        private HeaderCommand(AsyncPackage package, OleMenuCommandService commandService)
         {
             this.package = package ?? throw new ArgumentNullException(nameof(package));
             commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
@@ -49,7 +48,7 @@ namespace DateInserter
         /// <summary>
         /// Gets the instance of the command.
         /// </summary>
-        public static DateCommand Instance
+        public static HeaderCommand Instance
         {
             get;
             private set;
@@ -72,12 +71,12 @@ namespace DateInserter
         /// <param name="package">Owner package, not null.</param>
         public static async Task InitializeAsync(AsyncPackage package)
         {
-            // Switch to the main thread - the call to AddCommand in DateCommand's constructor requires
+            // Switch to the main thread - the call to AddCommand in HeaderCommand's constructor requires
             // the UI thread.
             await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync(package.DisposalToken);
 
             OleMenuCommandService commandService = await package.GetServiceAsync(typeof(IMenuCommandService)) as OleMenuCommandService;
-            Instance = new DateCommand(package, commandService);
+            Instance = new HeaderCommand(package, commandService);
         }
 
         /// <summary>
@@ -87,18 +86,20 @@ namespace DateInserter
         /// </summary>
         /// <param name="sender">Event sender.</param>
         /// <param name="e">Event args.</param>
-        private async void Execute(object sender, EventArgs e)
+        private void Execute(object sender, EventArgs e)
         {
-            await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-            var dte = await this.ServiceProvider.GetServiceAsync(typeof(DTE)) as DTE;
-            if (dte != null)
-            {
-                var activeDocument = dte.ActiveDocument;
-                var doc = activeDocument.Object() as TextDocument;
-                //if (doc != null) doc.CreateEditPoint(doc.Selection.ActivePoint).Insert(DateTime.Now.ToString());
-                var header = "//\r\n// Copyright (c) .NET Foundation. All rights reserved.\r\n// Licensed under the Creative Commons licence. See LICENSE file in the project root for full license information.\r\n//\r\n\r\n";
-                if (doc != null) doc.CreateEditPoint(doc.StartPoint).Insert(header);
-            }
+            ThreadHelper.ThrowIfNotOnUIThread();
+            string message = string.Format(CultureInfo.CurrentCulture, "Inside {0}.MenuItemCallback()", this.GetType().FullName);
+            string title = "HeaderCommand";
+
+            // Show a message box to prove we were here
+            VsShellUtilities.ShowMessageBox(
+                this.package,
+                message,
+                title,
+                OLEMSGICON.OLEMSGICON_INFO,
+                OLEMSGBUTTON.OLEMSGBUTTON_OK,
+                OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST);
         }
     }
 }
