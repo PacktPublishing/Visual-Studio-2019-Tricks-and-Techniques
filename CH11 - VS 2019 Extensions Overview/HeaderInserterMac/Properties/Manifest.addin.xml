@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionModel>
+    <Extension path="/MonoDevelop/Ide/Commands/Tools">
+        <Command id="HeaderInserterMac.HeaderInserterCommands.InsertHeader" _label="Insert Code Header" defaultHandler="HeaderInserterMac.HeaderInsertHandler" />
+    </Extension>
+    <Extension path="/MonoDevelop/Ide/MainMenu/Tools">
+        <CommandItem id="HeaderInserterMac.HeaderInserterCommands.InsertHeader" />
+    </Extension>
+</ExtensionModel>

@@ -28,12 +28,12 @@ using Mono.Addins;
 using Mono.Addins.Description;
 
 [assembly: Addin(
-    "DateInserterMac",
-    Namespace = "DateInserterMac",
+    "HeaderInserterMac",
+    Namespace = "HeaderInserterMac",
     Version = "1.0"
 )]
 
-[assembly: AddinName("DateInserterMac")]
+[assembly: AddinName("HeaderInserterMac")]
 [assembly: AddinCategory("IDE extensions")]
-[assembly: AddinDescription("DateInserterMac")]
+[assembly: AddinDescription("HeaderInserterMac")]
 [assembly: AddinAuthor("Mikayla Hutchinson")]
