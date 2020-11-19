@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CodeGenHero\Metadata\%28localdb%29\**" />
+    <EmbeddedResource Remove="CodeGenHero\Metadata\%28localdb%29\**" />
+    <None Remove="CodeGenHero\Metadata\%28localdb%29\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CodeGenHero\Metadata\" />
+  </ItemGroup>
+
+</Project>
