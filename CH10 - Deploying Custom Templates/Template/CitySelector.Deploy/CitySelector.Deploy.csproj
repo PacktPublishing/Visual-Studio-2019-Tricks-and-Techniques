@@ -45,58 +45,58 @@
     <Compile Include="CitySelector.VSIXPackage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Packages\Antlr.3.5.0.2.nupkg">
+    <Content Include="Pkgs\Antlr.3.5.0.2.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\bootstrap.4.5.2.nupkg">
+    <Content Include="Pkgs\bootstrap.4.5.2.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\jQuery.3.5.1.nupkg">
+    <Content Include="Pkgs\jQuery.3.5.1.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Microsoft.AspNet.Mvc.5.2.7.nupkg">
+    <Content Include="Pkgs\Microsoft.AspNet.Mvc.5.2.7.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Microsoft.AspNet.Razor.3.2.7.nupkg">
+    <Content Include="Pkgs\Microsoft.AspNet.Razor.3.2.7.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Microsoft.AspNet.Web.Optimization.1.1.3.nupkg">
+    <Content Include="Pkgs\Microsoft.AspNet.Web.Optimization.1.1.3.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Microsoft.AspNet.WebApi.5.2.7.nupkg">
+    <Content Include="Pkgs\Microsoft.AspNet.WebApi.5.2.7.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Microsoft.AspNet.WebApi.Client.5.2.7.nupkg">
+    <Content Include="Pkgs\Microsoft.AspNet.WebApi.Client.5.2.7.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Microsoft.AspNet.WebApi.Core.5.2.7.nupkg">
+    <Content Include="Pkgs\Microsoft.AspNet.WebApi.Core.5.2.7.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Microsoft.AspNet.WebApi.HelpPage.5.2.7.nupkg">
+    <Content Include="Pkgs\Microsoft.AspNet.WebApi.HelpPage.5.2.7.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Microsoft.AspNet.WebApi.WebHost.5.2.7.nupkg">
+    <Content Include="Pkgs\Microsoft.AspNet.WebApi.WebHost.5.2.7.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Microsoft.AspNet.WebPages.3.2.7.nupkg">
+    <Content Include="Pkgs\Microsoft.AspNet.WebPages.3.2.7.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0.nupkg">
+    <Content Include="Pkgs\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Microsoft.Web.Infrastructure.1.0.0.0.nupkg">
+    <Content Include="Pkgs\Microsoft.Web.Infrastructure.1.0.0.0.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Modernizr.2.8.3.nupkg">
+    <Content Include="Pkgs\Modernizr.2.8.3.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\Newtonsoft.Json.12.0.3.nupkg">
+    <Content Include="Pkgs\Newtonsoft.Json.12.0.3.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\popper.js.1.16.1.nupkg">
+    <Content Include="Pkgs\popper.js.1.16.1.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Packages\WebGrease.1.6.0.nupkg">
+    <Content Include="Pkgs\WebGrease.1.6.0.nupkg">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="ProjectTemplates\ClientServer.zip">
