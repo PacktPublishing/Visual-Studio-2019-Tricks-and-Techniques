@@ -23,7 +23,7 @@ namespace CGHClientServer1.DB.Entities
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=(localdb)\\ProjectsV13;Initial Catalog=CountryStateCity;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=CountryStateCity;Integrated Security=True");
             }
         }
 
