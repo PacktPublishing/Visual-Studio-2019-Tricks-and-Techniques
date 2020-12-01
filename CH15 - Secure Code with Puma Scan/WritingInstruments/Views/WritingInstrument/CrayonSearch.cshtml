@@ -1,0 +1,25 @@
+@model CrayonViewModel
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<h1>Find Crayons!!</h1>
+
+<form method="GET">
+    <input asp-for="Color" />
+    <button type="submit">Search</button>
+</form>
+
+@if (Model != null)
+{
+    <br />
+    if (Model.Id > 0)
+    {
+        <h2 style="color: @Html.Raw(Model.Color)">@Model.Color Crayon!!</h2>
+    }
+    else
+    {
+        <h2 style="color: @Html.Raw(Model.Color)">No Crayons found.</h2>
+    }
+}

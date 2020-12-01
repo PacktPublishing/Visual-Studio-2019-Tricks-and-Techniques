@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-WritingExample-0DEC0747-E588-491F-AD24-05E50B77B412</UserSecretsId>
+    <RootNameSpace>WritingExample</RootNameSpace>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.10"/>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.10"/>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.10"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.10"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.10"/>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.8.0"/>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.10"/>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0"/>
+    <PackageReference Include="bootstrap" Version="3.0.0"/>
+  </ItemGroup>
+</Project>

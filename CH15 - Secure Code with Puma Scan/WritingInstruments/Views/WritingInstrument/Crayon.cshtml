@@ -1,0 +1,37 @@
+@model CrayonViewModel
+
+@{
+    ViewData["Title"] = "Crayon";
+}
+
+<h1 style="color: @Html.Raw(Model.Color)">Crayons!!</h1>
+
+<form asp-controller="WritingInstrument" asp-action="SaveCrayon">
+    <input asp-for="Id" type="hidden" />
+    <input asp-for="Color" />
+    <button type="submit">Save</button>
+</form>
+
+@section Scripts
+{
+    <script src="~/js/color-picker.min.js"></script>
+    <script>
+
+    function liveColorPickerState(picker) {
+        picker.on('change', function(r, g, b, a) {
+            this.source.value = this.color(r, g, b, a);
+        });
+        function onChange() {
+            picker.set.apply(picker, CP.HEX(this.value)).enter();
+        }
+        ['cut', 'input', 'keyup', 'paste'].forEach(e => {
+            picker.source.addEventListener(e, onChange);
+        });
+    }
+
+    const picker = new CP(document.querySelector('#Color'));
+
+    liveColorPickerState(picker);
+
+    </script>
+}
