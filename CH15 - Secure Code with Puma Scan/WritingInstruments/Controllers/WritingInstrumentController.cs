@@ -51,6 +51,7 @@ namespace WritingExample.Controllers
             if (!string.IsNullOrEmpty(Color))
             {
                 var instrument = await context.Crayons.FromSqlRaw("SELECT * FROM Crayons WHERE HTMLColor = '" + Color + "'").FirstOrDefaultAsync();
+                //var instrument = await context.Crayons.FromSqlWriting("SELECT * FROM Crayons WHERE HTMLColor = '" + Color + "'").FirstOrDefaultAsync();
 
                 if (instrument == null)
                 {
