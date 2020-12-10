@@ -1,5 +1,5 @@
-
-
+USE WritingExample;
+GO
 
 CREATE TABLE [dbo].[WritingInstrument] (
     [Id]          INT           NOT NULL IDENTITY,
