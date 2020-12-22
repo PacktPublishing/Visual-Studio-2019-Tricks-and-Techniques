@@ -160,5 +160,8 @@
       <Name>CGHClientServer1.WebApiClient</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ApiClient\CGH\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,8 +10,4 @@
     <None Remove="CodeGenHero\Metadata\%28localdb%29\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="CodeGenHero\Metadata\" />
-  </ItemGroup>
-
 </Project>
