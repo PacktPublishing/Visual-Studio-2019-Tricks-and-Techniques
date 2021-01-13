@@ -95,7 +95,7 @@ Global
 		{E93E5F53-D246-4432-8F6C-89D4ECC76242} = {4279E303-DC37-4C64-8281-E89E8E35CD8D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A9B9CF58-188C-4872-BDB7-C5BE284E9876}
 		CodeGenHero_Project_Name = Shared\CodeGenHero\CodeGenHero.csproj
+		SolutionGuid = {A9B9CF58-188C-4872-BDB7-C5BE284E9876}
 	EndGlobalSection
 EndGlobal
